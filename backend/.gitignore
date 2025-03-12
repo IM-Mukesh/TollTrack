@@ -36,3 +36,4 @@ build/
 # Coverage and testing
 coverage/
 jest/
+.vercel
