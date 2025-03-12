@@ -53,6 +53,11 @@ router.post("/", authenticate, isAdmin, async (req, res) => {
   }
 });
 
+router.get("/test", authenticate, isAdmin, async (req, res) => {
+  //
+  return res.json({ message: "mukesh good to go" });
+});
+
 //@route POST /api/users/login
 //@desc Login user
 //@access Public
