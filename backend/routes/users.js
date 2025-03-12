@@ -59,6 +59,7 @@ router.post("/", authenticate, isAdmin, async (req, res) => {
 router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
+    console.log("email, password is", email, password);
 
     // Validate input
     if (!email || !password) {
