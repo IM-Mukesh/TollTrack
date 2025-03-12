@@ -58,6 +58,7 @@ router.post("/", authenticate, isAdmin, async (req, res) => {
 //@access Public
 router.post("/login", async (req, res) => {
   try {
+    console.log("Received request body:", req.body);
     const { email, password } = req.body;
     console.log("email, password is", email, password);
 
